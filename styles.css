@@ -269,30 +269,24 @@ body::before{
 /* ─── RESPONSIVE (phone) ─── */
 @media (max-width: 500px){
   body{
-    /* quiz position:fixed olduğu için body scroll gerekmez */
-    /* height sabit olunca justify-content:center mükemmel çalışır */
-    height:100svh;
-    height:100dvh;
     overflow:hidden;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
   }
-  /* Lobby: tam dikey + yatay ortalama */
+  /* Lobby: quiz gibi fixed + tam ekran ortalama */
   .lobby{
-    width:100%;
-    padding:16px 0;
-    display:flex;flex-direction:column;align-items:center;
-    justify-content:center;
-    flex:1;
+    position:fixed;
+    inset:0;
+    z-index:2;
+    display:flex;flex-direction:column;
+    align-items:center;justify-content:center;
+    overflow:hidden;
   }
-  /* scene 720px wide — telefona (375px) sığdırmak için:
-     margin-left: 50vw - 360px  →  sol kenarı ekranın yarısından 360px geriye al
-     transform-origin:center center  →  scale, ortadan ölçeklensin */
+  /* scene 720px — fixed lobby icinde flex ortalar, overflow ile kesilir */
   .scene{
     transform:scale(.46);
     transform-origin:center center;
-    margin-left:calc(50vw - 360px);
-    margin-top:-80px;
-    margin-bottom:-180px;
+    flex-shrink:0;
+    margin-top:-60px;
+    margin-bottom:-160px;
   }
   .l-brand{font-size:20px;letter-spacing:8px;}
   .l-tag{font-size:6.5px;letter-spacing:4px;margin-bottom:10px;}
