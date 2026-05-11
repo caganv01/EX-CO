@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>EX-CO — Oyun</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<template id="corner-tpl">
+  <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 2,18 L 2,2 L 18,2" fill="none" stroke="#c9a84c" stroke-width="1.4"/>
+    <path d="M 2,8 L 8,2" fill="none" stroke="#c9a84c" stroke-width="0.7" opacity="0.55"/>
+    <circle cx="2" cy="2" r="1.7" fill="#c9a84c" opacity="0.75"/>
+  </svg>
+</template>
+
+<div class="dim" id="dim"></div>
+<div class="spop" id="spop"></div>
+
+<!-- ═══ LOBBY ═══ -->
+<div class="lobby" id="lobby">
+  <div class="l-brand">EX&#8202;-&#8202;CO</div>
+  <div class="l-tag">Keşfet &nbsp;·&nbsp; Öğren &nbsp;·&nbsp; Kazan</div>
+  <div class="scene">
+    <div class="fan" id="fan">
+
+      <!-- Card 1: EX/CO emblem -->
+      <div class="hand-card">
+        <div class="fan-face">
+          <div class="c-bg"></div>
+          <div class="c-glow"></div>
+          <svg class="c-stars sf" viewBox="0 0 215 370" xmlns="http://www.w3.org/2000/svg"></svg>
+          <svg class="bp" viewBox="0 0 215 370" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="p0" x="0" y="0" width="55" height="43" patternUnits="userSpaceOnUse" patternTransform="rotate(-38)">
+                <text x="0" y="13" fill="#c9a84c" font-family="'Cinzel',serif" font-size="8.5" letter-spacing="2" font-weight="600">EX-CO</text>
+              </pattern>
+            </defs>
+            <rect width="215" height="370" fill="url(#p0)"/>
+          </svg>
+          <div class="c-frame"></div>
+          <div class="c-shine"></div>
+          <div class="corners">
+            <div class="corn tl"></div><div class="corn tr"></div>
+            <div class="corn bl"></div><div class="corn br"></div>
+          </div>
+          <div style="position:relative;z-index:6;height:100%;display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 130 175" xmlns="http://www.w3.org/2000/svg" width="130" height="175">
+              <rect x="5" y="5" width="120" height="165" rx="6" fill="none" stroke="rgba(201,168,76,0.24)" stroke-width="0.8"/>
+              <rect x="10" y="10" width="110" height="155" rx="4" fill="none" stroke="rgba(201,168,76,0.09)" stroke-width="0.5"/>
+              <polygon points="15,15 19,10 23,15 19,20" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="115,15 111,10 107,15 111,20" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="15,160 19,155 23,160 19,165" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="115,160 111,155 107,160 111,165" fill="rgba(201,168,76,0.45)"/>
+              <text x="65" y="81" text-anchor="middle" fill="rgba(201,168,76,0.62)" font-family="'Cinzel',serif" font-size="22" font-weight="700" letter-spacing="4">EX</text>
+              <line x1="22" y1="88" x2="108" y2="88" stroke="rgba(201,168,76,0.18)" stroke-width="0.5"/>
+              <polygon points="65,85 68,88 65,91 62,88" fill="rgba(201,168,76,0.35)"/>
+              <text x="65" y="108" text-anchor="middle" fill="rgba(201,168,76,0.62)" font-family="'Cinzel',serif" font-size="22" font-weight="700" letter-spacing="4">CO</text>
+              <text x="65" y="124" text-anchor="middle" fill="rgba(201,168,76,0.18)" font-family="'Cinzel',serif" font-size="5.5" letter-spacing="3">KEŞFET · ÖĞREN</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Compass rose -->
+      <div class="hand-card">
+        <div class="fan-face">
+          <div class="c-bg"></div>
+          <div class="c-glow"></div>
+          <svg class="c-stars sf" viewBox="0 0 215 370" xmlns="http://www.w3.org/2000/svg"></svg>
+          <svg class="bp" viewBox="0 0 215 370" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="p1" x="0" y="0" width="55" height="43" patternUnits="userSpaceOnUse" patternTransform="rotate(-38)">
+                <text x="0" y="13" fill="#c9a84c" font-family="'Cinzel',serif" font-size="8.5" letter-spacing="2" font-weight="600">EX-CO</text>
+              </pattern>
+            </defs>
+            <rect width="215" height="370" fill="url(#p1)"/>
+          </svg>
+          <div class="c-frame"></div>
+          <div class="c-shine"></div>
+          <div class="corners">
+            <div class="corn tl"></div><div class="corn tr"></div>
+            <div class="corn bl"></div><div class="corn br"></div>
+          </div>
+          <div style="position:relative;z-index:6;height:100%;display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 130 175" xmlns="http://www.w3.org/2000/svg" width="130" height="175">
+              <rect x="5" y="5" width="120" height="165" rx="6" fill="none" stroke="rgba(201,168,76,0.24)" stroke-width="0.8"/>
+              <rect x="10" y="10" width="110" height="155" rx="4" fill="none" stroke="rgba(201,168,76,0.09)" stroke-width="0.5"/>
+              <polygon points="15,15 19,10 23,15 19,20" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="115,15 111,10 107,15 111,20" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="15,160 19,155 23,160 19,165" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="115,160 111,155 107,160 111,165" fill="rgba(201,168,76,0.45)"/>
+              <circle cx="65" cy="85" r="30" fill="none" stroke="rgba(201,168,76,0.13)" stroke-width="0.6"/>
+              <polygon points="65,55 68,82 65,85 62,82" fill="rgba(201,168,76,0.85)"/>
+              <polygon points="65,115 68,88 65,85 62,88" fill="rgba(201,168,76,0.58)"/>
+              <polygon points="95,85 68,82 65,85 68,88" fill="rgba(201,168,76,0.58)"/>
+              <polygon points="35,85 62,82 65,85 62,88" fill="rgba(201,168,76,0.85)"/>
+              <circle cx="65" cy="85" r="4" fill="none" stroke="rgba(201,168,76,0.4)" stroke-width="0.7"/>
+              <circle cx="65" cy="85" r="1.7" fill="rgba(201,168,76,0.78)"/>
+              <text x="65" y="124" text-anchor="middle" fill="rgba(201,168,76,0.18)" font-family="'Cinzel',serif" font-size="5.5" letter-spacing="3">KEŞFET · ÖĞREN</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: EX/CO emblem (mirror of Card 1) -->
+      <div class="hand-card">
+        <div class="fan-face">
+          <div class="c-bg"></div>
+          <div class="c-glow"></div>
+          <svg class="c-stars sf" viewBox="0 0 215 370" xmlns="http://www.w3.org/2000/svg"></svg>
+          <svg class="bp" viewBox="0 0 215 370" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="p2" x="0" y="0" width="55" height="43" patternUnits="userSpaceOnUse" patternTransform="rotate(-38)">
+                <text x="0" y="13" fill="#c9a84c" font-family="'Cinzel',serif" font-size="8.5" letter-spacing="2" font-weight="600">EX-CO</text>
+              </pattern>
+            </defs>
+            <rect width="215" height="370" fill="url(#p2)"/>
+          </svg>
+          <div class="c-frame"></div>
+          <div class="c-shine"></div>
+          <div class="corners">
+            <div class="corn tl"></div><div class="corn tr"></div>
+            <div class="corn bl"></div><div class="corn br"></div>
+          </div>
+          <div style="position:relative;z-index:6;height:100%;display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 130 175" xmlns="http://www.w3.org/2000/svg" width="130" height="175">
+              <rect x="5" y="5" width="120" height="165" rx="6" fill="none" stroke="rgba(201,168,76,0.24)" stroke-width="0.8"/>
+              <rect x="10" y="10" width="110" height="155" rx="4" fill="none" stroke="rgba(201,168,76,0.09)" stroke-width="0.5"/>
+              <polygon points="15,15 19,10 23,15 19,20" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="115,15 111,10 107,15 111,20" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="15,160 19,155 23,160 19,165" fill="rgba(201,168,76,0.45)"/>
+              <polygon points="115,160 111,155 107,160 111,165" fill="rgba(201,168,76,0.45)"/>
+              <text x="65" y="81" text-anchor="middle" fill="rgba(201,168,76,0.62)" font-family="'Cinzel',serif" font-size="22" font-weight="700" letter-spacing="4">EX</text>
+              <line x1="22" y1="88" x2="108" y2="88" stroke="rgba(201,168,76,0.18)" stroke-width="0.5"/>
+              <polygon points="65,85 68,88 65,91 62,88" fill="rgba(201,168,76,0.35)"/>
+              <text x="65" y="108" text-anchor="middle" fill="rgba(201,168,76,0.62)" font-family="'Cinzel',serif" font-size="22" font-weight="700" letter-spacing="4">CO</text>
+              <text x="65" y="124" text-anchor="middle" fill="rgba(201,168,76,0.18)" font-family="'Cinzel',serif" font-size="5.5" letter-spacing="3">KEŞFET · ÖĞREN</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Joker / Super Question (highlighted) -->
+      <div class="hand-card">
+        <div class="fan-face" style="border-color:rgba(201,168,76,0.42);">
+          <div class="c-bg" style="background:#030308;"></div>
+          <div class="c-glow"></div>
+          <div style="position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse at 50% 45%,rgba(201,168,76,0.09) 0%,transparent 62%);"></div>
+          <svg class="c-stars sf" viewBox="0 0 215 370" xmlns="http://www.w3.org/2000/svg" style="opacity:.1"></svg>
+          <div class="c-frame"></div>
+          <div class="c-shine"></div>
+          <div class="corners">
+            <div class="corn tl"></div><div class="corn tr"></div>
+            <div class="corn bl"></div><div class="corn br"></div>
+          </div>
+          <div style="position:relative;z-index:6;height:100%;display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 130 175" xmlns="http://www.w3.org/2000/svg" width="130" height="175">
+              <rect x="5" y="5" width="120" height="165" rx="6" fill="none" stroke="rgba(201,168,76,0.4)" stroke-width="0.8"/>
+              <rect x="10" y="10" width="110" height="155" rx="4" fill="none" stroke="rgba(201,168,76,0.16)" stroke-width="0.5"/>
+              <polygon points="15,15 19,10 23,15 19,20" fill="rgba(201,168,76,0.58)"/>
+              <polygon points="115,15 111,10 107,15 111,20" fill="rgba(201,168,76,0.58)"/>
+              <polygon points="15,160 19,155 23,160 19,165" fill="rgba(201,168,76,0.58)"/>
+              <polygon points="115,160 111,155 107,160 111,165" fill="rgba(201,168,76,0.58)"/>
+              <circle cx="65" cy="85" r="32" fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="0.6"/>
+              <polygon points="65,53 68.5,82 65,85 61.5,82" fill="rgba(201,168,76,0.88)"/>
+              <polygon points="65,117 68.5,88 65,85 61.5,88" fill="rgba(201,168,76,0.62)"/>
+              <polygon points="97,85 68.5,81.5 65,85 68.5,88.5" fill="rgba(201,168,76,0.62)"/>
+              <polygon points="33,85 61.5,81.5 65,85 61.5,88.5" fill="rgba(201,168,76,0.88)"/>
+              <polygon points="92,58 72,83 65,85 72,81" fill="rgba(201,168,76,0.32)"/>
+              <polygon points="92,112 72,87 65,85 72,89" fill="rgba(201,168,76,0.32)"/>
+              <polygon points="38,112 58,87 65,85 58,89" fill="rgba(201,168,76,0.32)"/>
+              <polygon points="38,58 58,83 65,85 58,81" fill="rgba(201,168,76,0.32)"/>
+              <circle cx="65" cy="85" r="5.2" fill="none" stroke="rgba(201,168,76,0.42)" stroke-width="0.8"/>
+              <circle cx="65" cy="85" r="2" fill="rgba(201,168,76,0.82)"/>
+              <text x="65" y="124" text-anchor="middle" fill="rgba(201,168,76,0.2)" font-family="'Cinzel',serif" font-size="5.5" letter-spacing="3">KEŞFET · ÖĞREN</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="hand-shadow"></div>
+    </div>
+  </div>
+  <div class="l-hint">Bir kart seç &nbsp;—&nbsp; başlamak için dokun</div>
+</div>
+
+<!-- ═══ START MODAL ═══ -->
+<div class="smodal" id="smodal">
+  <div class="smc">
+    <div class="smc-logo">EX-CO</div>
+    <div class="smc-sep"><div class="smc-sl"></div><div class="smc-sg"></div><div class="smc-sr"></div></div>
+    <div class="smc-icon">
+      <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+        <circle cx="40" cy="40" r="35" fill="none" stroke="rgba(201,168,76,0.17)" stroke-width="0.7"/>
+        <circle cx="40" cy="40" r="27" fill="none" stroke="rgba(201,168,76,0.09)" stroke-width="0.5"/>
+        <g stroke="rgba(201,168,76,0.27)" stroke-width="0.6">
+          <line x1="40" y1="5" x2="40" y2="11"/>
+          <line x1="40" y1="69" x2="40" y2="75"/>
+          <line x1="5" y1="40" x2="11" y2="40"/>
+          <line x1="69" y1="40" x2="75" y2="40"/>
+        </g>
+        <polygon points="40,6 43,36 40,40 37,36" fill="rgba(201,168,76,0.9)"/>
+        <polygon points="40,74 43,44 40,40 37,44" fill="rgba(201,168,76,0.58)"/>
+        <polygon points="74,40 44,37 40,40 44,43" fill="rgba(201,168,76,0.58)"/>
+        <polygon points="6,40 36,37 40,40 36,43" fill="rgba(201,168,76,0.9)"/>
+        <polygon points="65,15 43,38 40,40 43,37" fill="rgba(201,168,76,0.28)"/>
+        <polygon points="65,65 43,42 40,40 43,43" fill="rgba(201,168,76,0.28)"/>
+        <polygon points="15,65 37,42 40,40 37,43" fill="rgba(201,168,76,0.28)"/>
+        <polygon points="15,15 37,38 40,40 37,37" fill="rgba(201,168,76,0.28)"/>
+        <circle cx="40" cy="40" r="4.5" fill="none" stroke="rgba(201,168,76,0.43)" stroke-width="0.8"/>
+        <circle cx="40" cy="40" r="1.9" fill="rgba(201,168,76,0.82)"/>
+      </svg>
+    </div>
+    <div class="smc-title">Oyuna Başlamak<br>İster misin?</div>
+    <div class="smc-sub">10 soru · 4 şık · En çok puanı topla</div>
+    <div class="smc-rule"></div>
+    <div class="smc-btns">
+      <button class="smc-btn smc-yes" id="btnYes">Evet, Başla</button>
+      <button class="smc-btn smc-no" id="btnNo">Hayır</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ QUIZ ═══ -->
+<div class="quiz" id="quizScreen">
+  <div class="qbar">
+    <div class="qbar-left">
+      <div class="qbar-nums" id="qNum">1 / 10</div>
+      <div class="qbar-track"><div class="qbar-fill" id="qFill" style="width:0%"></div></div>
+    </div>
+    <div class="qbar-right">
+      <div class="qbar-slabel">Puan</div>
+      <div class="qbar-score" id="qScore">0</div>
+    </div>
+  </div>
+
+  <div class="qtimer-wrap">
+    <div class="qtimer-bar"><div class="qtimer-fill" id="qTimerFill"></div></div>
+    <div class="qtimer-text" id="qTimerText">30s</div>
+  </div>
+
+  <div class="qpanel" id="qpanel">
+    <svg class="qpanel-stars sf" viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="qpanel-frame"></div>
+    <div class="qpanel-content">
+      <div class="qpanel-top">
+        <div class="q-cat" id="qCat">Arkeoloji</div>
+        <div class="q-pts" id="qPts">+3 puan</div>
+      </div>
+      <div class="q-title" id="qTitle">Mısır Değil miydi ya?</div>
+      <div class="q-rule"></div>
+      <div class="q-clue" id="qClue">Soru metni...</div>
+      <div class="q-prompt" id="qPrompt">Hangi ülke?</div>
+    </div>
+  </div>
+
+  <div class="qopts" id="qOpts">
+    <button class="qopt" data-i="0"><div class="qopt-letter">A</div><div class="qopt-text" id="opt0">—</div></button>
+    <button class="qopt" data-i="1"><div class="qopt-letter">B</div><div class="qopt-text" id="opt1">—</div></button>
+    <button class="qopt" data-i="2"><div class="qopt-letter">C</div><div class="qopt-text" id="opt2">—</div></button>
+    <button class="qopt" data-i="3"><div class="qopt-letter">D</div><div class="qopt-text" id="opt3">—</div></button>
+  </div>
+
+  <div class="q-reveal" id="qReveal">
+    <div class="q-reveal-silh" id="qRevSilh"></div>
+    <div class="q-reveal-info">
+      <div class="q-reveal-name" id="qRevName"></div>
+      <div class="q-reveal-facts" id="qRevFacts"></div>
+    </div>
+    <div class="q-reveal-pts" id="qRevPts"></div>
+  </div>
+
+  <button class="q-next" id="btnNext">Sonraki Soru →</button>
+</div>
+
+<!-- ═══ END SCREEN ═══ -->
+<div class="endscreen" id="endScreen">
+  <div class="endcard">
+    <div class="end-logo">EX-CO</div>
+    <div class="end-sep"><div class="end-sl"></div><div class="end-sg"></div><div class="end-sr"></div></div>
+    <div class="end-title">Oyun Bitti!</div>
+    <div class="end-slabel">Toplam Puan</div>
+    <div class="end-score" id="endScore">0</div>
+    <div class="end-of" id="endOf">/ 30 üzerinden</div>
+    <div class="end-msg" id="endMsg">Harika bir yolculuktu!</div>
+    <div class="end-rule"></div>
+    <button class="end-btn" id="btnRestart">Tekrar Oyna</button>
+  </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>

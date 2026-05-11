@@ -1,0 +1,391 @@
+{
+  "pool": [
+    {
+      "cat": "Arkeoloji",
+      "title": "Mısır Değil miydi ya?",
+      "clue": "Bu ülke, dünyada en çok piramide sahip olan ülkedir. Genelde herkes Mısır der ama bu ülkedeki piramit sayısı 200'ü geçer — Mısır'dakilerin neredeyse iki katı! Nil Nehri'nin kıyısında ama Mısır'ın daha güneyinde kalır.",
+      "prompt": "Sence hangi ülke?",
+      "answer": "Sudan",
+      "options": ["Sudan", "Mısır", "Libya", "Çad"],
+      "silh": "<svg viewBox=\"0 0 120 160\" xmlns=\"http://www.w3.org/2000/svg\" width=\"46\" height=\"62\"><path d=\"M 22,5 L 98,5 L 105,38 L 100,78 L 84,115 L 68,155 L 52,155 L 36,115 L 20,78 L 16,38 Z\"/></svg>",
+      "facts": [["Başkent", "Hartum"], ["Piramit", "200+"]],
+      "pts": 3
+    },
+    {
+      "cat": "Sinema",
+      "title": "Galaktik Esintiler",
+      "clue": "Star Wars'ın Tatooine sahnelerinin çoğu burada çekildi. Luke Skywalker'ın çiftlik evi hâlâ bir otel olarak kullanılıyor. 'Tatooine' ismi buradaki gerçek bir şehirden alınmış.",
+      "prompt": "Hangi ülke burası?",
+      "answer": "Tunus",
+      "options": ["Fas", "Tunus", "Cezayir", "Libya"],
+      "silh": "<svg viewBox=\"0 0 100 150\" xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"57\"><path d=\"M 38,5 L 84,8 L 94,40 L 88,78 L 72,115 L 52,140 L 32,130 L 18,100 L 16,64 L 24,30 Z\"/></svg>",
+      "facts": [["Başkent", "Tunus"], ["Film", "Star Wars"]],
+      "pts": 3
+    },
+    {
+      "cat": "Coğrafya",
+      "title": "Ada Mühendisliği",
+      "clue": "Dünyanın en çok adasına sahip ülkesi: tam 267.570 ada! Sadece 1.000 kadarı yerleşime açık, geri kalanı ıssız doğa harikası.",
+      "prompt": "Tahminin nedir?",
+      "answer": "İsveç",
+      "options": ["Finlandiya", "Norveç", "İsveç", "Danimarka"],
+      "silh": "<svg viewBox=\"0 0 100 220\" xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"62\"><path d=\"M 52,5 L 78,18 L 88,52 L 82,88 L 72,122 L 62,158 L 48,188 L 34,206 L 20,198 L 18,172 L 28,148 L 38,120 L 40,90 L 32,60 L 38,30 Z\"/></svg>",
+      "facts": [["Başkent", "Stockholm"], ["Ada Sayısı", "267.570"]],
+      "pts": 2
+    },
+    {
+      "cat": "Kültür",
+      "title": "Zaman Yolculuğu",
+      "clue": "Bu ülke farklı bir takvim kullanır ve şu an bizim takvimimizden ~7-8 yıl geride. Yılda 12 değil 13 ay var. Yeni yıla da Eylül ayında giriyorlar.",
+      "prompt": "Hangi ülkeden bahsediyorum?",
+      "answer": "Etiyopya",
+      "options": ["Eritre", "Somali", "Sudan", "Etiyopya"],
+      "silh": "<svg viewBox=\"0 0 160 130\" xmlns=\"http://www.w3.org/2000/svg\" width=\"54\" height=\"44\"><path d=\"M 42,5 L 102,5 L 148,28 L 143,72 L 108,108 L 68,118 L 28,98 L 12,62 L 22,28 Z\"/></svg>",
+      "facts": [["Başkent", "Addis Ababa"], ["Takvim", "13 Aylı"]],
+      "pts": 3
+    },
+    {
+      "cat": "Ordu",
+      "title": "Kuşlara Yenilen Ordu",
+      "clue": "Bu koca kıta ülkesi düpedüz kuşlara savaş açmış ve kaybetmiş! Orduyu makineli tüfeklerle dev Emu kuşlarının üstüne salmışlar, ama kuşlar taktik yapıp dağılmış. Mermiler boşa gitmiş, savaşı kuşlar kazanmış. Üstelik dünyanın en zehirli yılanları ve dev örümcekleri de sanki özellikle burayı mesken tutmuş.",
+      "prompt": "Sence neresi burası?",
+      "answer": "Avustralya",
+      "options": ["Avustralya", "Yeni Zelanda", "Güney Afrika", "Kanada"],
+      "silh": "<svg viewBox=\"0 0 200 160\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"42\"><path d=\"M 10,80 C 12,50 28,22 58,12 C 88,2 128,5 158,18 C 188,31 200,55 195,80 C 190,105 175,118 155,120 C 135,122 125,132 115,145 C 105,158 88,160 70,150 C 52,140 35,125 22,108 C 10,92 8,105 10,80 Z\"/></svg>",
+      "facts": [["Başkent", "Canberra"], ["Özellik", "Emu Savaşı 1932"]],
+      "pts": 2
+    },
+    {
+      "cat": "Sınırlar",
+      "title": "Sınırlarda Kafalar Karışık",
+      "clue": "Romantizmin başkenti, kruvasan ve peynir diyarı bu Avrupa ülkesinin en uzun kara sınırı başka bir Avrupa ülkesiyle değil, Brezilya ile! Denizaşırı toprakları sayesinde Güney Amerika'da kocaman bir toprak parçasına sahip.",
+      "prompt": "Hangi 'Bonjour' diyen ülkeden bahsediyoruz?",
+      "answer": "Fransa",
+      "options": ["Portekiz", "İspanya", "Fransa", "Belçika"],
+      "silh": "<svg viewBox=\"0 0 160 170\" xmlns=\"http://www.w3.org/2000/svg\" width=\"44\" height=\"47\"><path d=\"M 62,8 L 118,5 L 152,32 L 155,78 L 140,122 L 102,158 L 58,155 L 18,118 L 14,70 L 28,36 Z\"/></svg>",
+      "facts": [["Başkent", "Paris"], ["Sınır", "Brezilya ile en uzun"]],
+      "pts": 2
+    },
+    {
+      "cat": "Tarih",
+      "title": "Savaşa Gidip Arkadaşla Dönmek",
+      "clue": "Bu minnacık Avrupa ülkesi 1866'da savaşa 80 kişilik dev(!) orduyla gitmiş. Hiçbir çatışmaya girmeden üstüne bir de muhabbet edip sevdikleri bir İtalyan arkadaş edinerek 81 kişi dönmüşler! Bir ara Airbnb'de geceliği 70.000 dolara komple ülkeyi kiralayabiliyordun.",
+      "prompt": "Bul bakalım, neresi bu sevimli ülke?",
+      "answer": "Lihtenştayn",
+      "options": ["Lüksemburg", "Monaco", "San Marino", "Lihtenştayn"],
+      "silh": "<svg viewBox=\"0 0 60 100\" xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"50\"><path d=\"M 15,5 L 45,5 L 50,50 L 45,95 L 15,95 L 10,50 Z\"/></svg>",
+      "facts": [["Başkent", "Vaduz"], ["Ordu", "80 Kişi (1866)"]],
+      "pts": 4
+    },
+    {
+      "cat": "Efsane",
+      "title": "Şantiyeye Elf Çarptı",
+      "clue": "Bu ateş ve buz ülkesinde halkın ciddi bir kısmı elflerin (gizli insanların) yaşadığına inanıyor. Yol yapımı sırasında kayalara denk gelirlerse \"elfler çarpılırız\" diye yolu yamultuyorlar! Üstelik koskoca ülkede bir tane bile sivrisinek yok.",
+      "prompt": "Sence hangi şanslı ülke burası?",
+      "answer": "İzlanda",
+      "options": ["İzlanda", "Norveç", "Finlandiya", "İsveç"],
+      "silh": "<svg viewBox=\"0 0 150 80\" xmlns=\"http://www.w3.org/2000/svg\" width=\"58\" height=\"31\"><path d=\"M 22,45 C 12,32 10,18 22,12 C 34,6 60,3 88,6 C 116,9 138,20 136,35 C 134,50 112,58 82,60 C 52,62 32,58 22,45 Z\"/></svg>",
+      "facts": [["Başkent", "Reykjavik"], ["Özellik", "Sifir Sivrisinek"]],
+      "pts": 3
+    },
+    {
+      "cat": "Hukuk",
+      "title": "Kanka Ben Özür Dilerim Ya",
+      "clue": "Bu ülkenin insanları o kadar kibar ki, meclisten geçen resmi bir 'Özür Dilerim Yasası' var! Kazalarda özür dilemek hukuki suç sayılmıyor, sadece nezaketten sayılıyor. Bir de o kadar çok gölleri var ki, dünyanın geri kalanındaki tüm gölleri toplasan bunların yanına bile yaklaşamıyor.",
+      "prompt": "Hangi kibar ve şuruplu ülke bu?",
+      "answer": "Kanada",
+      "options": ["Avustralya", "İsveç", "Kanada", "Norveç"],
+      "silh": "<svg viewBox=\"0 0 200 150\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"39\"><path d=\"M 5,70 L 12,30 L 35,12 L 75,5 L 120,8 L 165,18 L 195,40 L 195,75 L 175,90 L 145,85 L 115,92 L 95,85 L 65,95 L 40,88 L 18,92 Z\"/></svg>",
+      "facts": [["Başkent", "Ottawa"], ["Göl", "Dünya Toplam Göl Alanı"]],
+      "pts": 2
+    },
+    {
+      "cat": "Trafik",
+      "title": "Trafik Işığına Kimin İhtiyacı Var?",
+      "clue": "Bu ülkenin başkentinde bir tane bile trafik ışığı yok! Bir ara koymayı denemişler ama halk 'Ne kadar çirkin bir şey' diye isyan edince hemen sökmüşler. Onun yerine eldivenli polisler dans eder gibi hareketlerle trafiği yönetiyor.",
+      "prompt": "Neresi bu neşeli yer?",
+      "answer": "Butan",
+      "options": ["Nepal", "Butan", "Hindistan", "Siri Lanka"],
+      "silh": "<svg viewBox=\"0 0 160 90\" xmlns=\"http://www.w3.org/2000/svg\" width=\"60\" height=\"34\"><path d=\"M 30,42 L 62,8 L 118,10 L 142,42 L 128,80 L 88,88 L 46,80 L 22,58 Z\"/></svg>",
+      "facts": [["Başkent", "Thimphu"], ["Trafik", "Işık Yok!"]],
+      "pts": 4
+    },
+    {
+      "cat": "Oyun",
+      "title": "Gerçek Hayatta Blok Koymak",
+      "clue": "Bu ülke, gençler coğrafyayı eğlenerek öğrensin diye tüm ülkenin 1:1 ölçekli haritasını tam 4 milyar blok kullanarak Minecraft'ta inşa etti! Sonradan yabancı oyuncular girip bazı yerleri dinamitleyip kendi bayraklarını dikti — o ayrı bir komedi.",
+      "prompt": "Sence bu vizyonlu ülke neresi?",
+      "answer": "Danimarka",
+      "options": ["Hollanda", "İsveç", "Danimarka", "Norveç"],
+      "silh": "<svg viewBox=\"0 0 80 120\" xmlns=\"http://www.w3.org/2000/svg\" width=\"34\" height=\"51\"><path d=\"M 30,5 L 55,8 L 65,30 L 58,52 L 65,75 L 52,108 L 35,115 L 18,95 L 15,68 L 25,45 L 20,22 Z\"/></svg>",
+      "facts": [["Başkent", "Kopenhag"], ["Minecraft", "4 Milyar Blok"]],
+      "pts": 3
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Pasif Gelir Ustası",
+      "clue": "Bu minik ada ülkesi tamamen şans eseri internetin en popüler uzantılarından birine (.tv) sahip. Sadece bu iki harflik uzantıyı yayın platformlarına kiralayarak her yıl milyonlarca dolar kazanıyorlar. Ülkenin altyapısı bu dijital kira geliriyle dönüyor!",
+      "prompt": "Neresi bu şanslı ada?",
+      "answer": "Tuvalu",
+      "options": ["Fiji", "Samoa", "Tonga", "Tuvalu"],
+      "silh": "<svg viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"35\"><ellipse cx=\"30\" cy=\"20\" rx=\"25\" ry=\"13\"/></svg>",
+      "facts": [["Kıta", "Pasifik"], ["Gelir", ".tv Uzantısı"]],
+      "pts": 4
+    },
+    {
+      "cat": "Doğa",
+      "title": "Cehenneme Açılan Kapı",
+      "clue": "Bu ülkede devasa bir çölde 50 yıldan fazladır yanan dev bir krater var. Mühendisler 'Kibriti çakalım, 3-5 güne söner' demişler; o gün bugündür sönmedi! Ayrıca başkentteki tüm binaların beyaz mermerden olması yasal bir zorunluluk.",
+      "prompt": "Hangi ülkeden bahsediyoruz?",
+      "answer": "Türkmenistan",
+      "options": ["Azerbaycan", "Özbekistan", "Kazakistan", "Türkmenistan"],
+      "silh": "<svg viewBox=\"0 0 180 120\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"35\"><path d=\"M 12,42 L 22,15 L 60,8 L 108,10 L 148,8 L 168,28 L 162,62 L 138,82 L 95,88 L 52,78 L 18,68 Z\"/></svg>",
+      "facts": [["Başkent", "Aşkabat"], ["Krater", "50+ Yıldır Yanıyor"]],
+      "pts": 4
+    },
+    {
+      "cat": "Ordu",
+      "title": "Şövalye Penguen",
+      "clue": "Fiyortlarıyla meşhur bu Avrupa ülkesinin ordusunda rütbeli bir penguen var! 'Sir Nils Olav' adında şövalye ilan edilmiş, tuğgeneral rütbesinde bir kral pengueni. Birlikler karşısında resmi geçitlerde esas duruşa geçiyor.",
+      "prompt": "Sence bu havalı ordu nerenin?",
+      "answer": "Norveç",
+      "options": ["İsveç", "Danimarka", "Finlandiya", "Norveç"],
+      "silh": "<svg viewBox=\"0 0 100 220\" xmlns=\"http://www.w3.org/2000/svg\" width=\"26\" height=\"58\"><path d=\"M 52,5 L 82,14 L 102,42 L 94,82 L 78,118 L 62,158 L 44,175 L 26,168 L 16,138 L 20,108 L 35,78 L 38,50 Z\"/></svg>",
+      "facts": [["Başkent", "Oslo"], ["Şövalye", "Sir Nils Olav"]],
+      "pts": 2
+    },
+    {
+      "cat": "Uzay",
+      "title": "Mars'ın Dünyadaki Şubesi",
+      "clue": "Bu ülkenin kuzeyindeki dev çöl o kadar kurak ki, bazı yerlerine hiç yağmur damlası düşmemiş. Yüzeyi Mars'a o kadar benziyor ki, uzay ajansları rover testlerini burada yapıyor. Adeta uzak bir gezegen simülasyonu!",
+      "prompt": "Hangi uzun ve ince ülke bu?",
+      "answer": "Şili",
+      "options": ["Peru", "Bolivya", "Arjantin", "Şili"],
+      "silh": "<svg viewBox=\"0 0 60 200\" xmlns=\"http://www.w3.org/2000/svg\" width=\"19\" height=\"63\"><path d=\"M 22,5 L 40,5 L 48,25 L 50,55 L 48,90 L 45,125 L 40,158 L 32,188 L 20,195 L 12,182 L 15,148 L 18,112 L 18,78 L 15,45 Z\"/></svg>",
+      "facts": [["Başkent", "Santiago"], ["Çöl", "Atacama"]],
+      "pts": 3
+    },
+    {
+      "cat": "Tarih",
+      "title": "Elmanın ve Atların Anavatanı",
+      "clue": "Dünyadaki tüm elmaların atası aslen bu topraklardan çıkma! Aynı zamanda atların ilk kez evcilleştirildiği yer olduğu söyleniyor. Denize kıyısı olmayan dünyanın en büyük ülkesi.",
+      "prompt": "Tahminin nedir?",
+      "answer": "Kazakistan",
+      "options": ["Moğolistan", "Özbekistan", "Kırgızistan", "Kazakistan"],
+      "silh": "<svg viewBox=\"0 0 200 130\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"34\"><path d=\"M 8,38 L 28,8 L 72,5 L 118,8 L 158,18 L 192,42 L 188,78 L 162,100 L 118,112 L 68,108 L 28,92 L 8,68 Z\"/></svg>",
+      "facts": [["Başkent", "Astana"], ["İlk", "Elma ve At Evcilleştirme"]],
+      "pts": 3
+    },
+    {
+      "cat": "Spor",
+      "title": "Eşini Sırtla ve Koş",
+      "clue": "Bu İskandinav ülkesinde resmi 'Eş Taşıma Şampiyonası' var! Karını sırtına alıp çamurlu engelli parkurda depar atıyorsun. Birinciye eşinin ağırlığı kadar bira veriliyor.",
+      "prompt": "Neresi bu sportif ve garip yer?",
+      "answer": "Finlandiya",
+      "options": ["Norveç", "Danimarka", "İsveç", "Finlandiya"],
+      "silh": "<svg viewBox=\"0 0 100 180\" xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"54\"><path d=\"M 48,5 L 72,12 L 82,38 L 78,68 L 68,100 L 58,130 L 48,158 L 35,168 L 22,158 L 15,128 L 18,98 L 22,68 L 18,40 L 28,15 Z\"/></svg>",
+      "facts": [["Başkent", "Helsinki"], ["Şampiyona", "Eş Taşıma"]],
+      "pts": 3
+    },
+    {
+      "cat": "Gastronomi",
+      "title": "Çeşmeden Akan Şarap",
+      "clue": "Makarna ve pizzanın anavatanı olan bu ülkede, 7 gün 24 saat bedava şarap akan gerçek bir çeşme var! Tamamen yasal, yoldan geçen herkes gidip kana kana içebiliyor.",
+      "prompt": "Hangi 'Mamma Mia!' ülkesi bu?",
+      "answer": "İtalya",
+      "options": ["İspanya", "Fransa", "Portekiz", "İtalya"],
+      "silh": "<svg viewBox=\"0 0 120 220\" xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"56\"><path d=\"M 38,5 L 60,8 L 72,35 L 78,68 L 75,105 L 68,145 L 55,178 L 38,195 L 25,188 L 28,162 L 42,148 L 45,122 L 40,92 L 30,65 L 25,35 L 30,12 Z\"/></svg>",
+      "facts": [["Başkent", "Roma"], ["Şarap", "24/7 Bedava Çeşme"]],
+      "pts": 2
+    },
+    {
+      "cat": "Sinema",
+      "title": "Koyunların İstilası ve Yüzükler",
+      "clue": "Bu ülkede insan nüfusundan çok daha fazla koyun var — kişi başına 5-6 koyun düşüyor! Yüzüklerin Efendisi filmlerindeki o yemyeşil Hobbit köyü (Hobbiton) tam olarak buraya inşa edildi ve hâlâ gezilebiliyor.",
+      "prompt": "Hangi fantastik diyar burası?",
+      "answer": "Yeni Zelanda",
+      "options": ["Avustralya", "Fiji", "Papua Yeni Gine", "Yeni Zelanda"],
+      "silh": "<svg viewBox=\"0 0 100 180\" xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"54\"><path d=\"M 45,5 L 68,8 L 78,32 L 68,58 L 48,68 L 28,58 L 22,35 L 35,12 Z M 52,85 L 72,88 L 78,108 L 72,132 L 55,145 L 38,138 L 28,118 L 32,98 Z\"/></svg>",
+      "facts": [["Başkent", "Wellington"], ["Hobbiton", "Gerçekten Var"]],
+      "pts": 2
+    },
+    {
+      "cat": "Kültür",
+      "title": "Gözyaşı Silici Kiralama",
+      "clue": "Bu ülkede her şeyin otomatı var: sıcak çorba, şemsiye, kravat... Ama asıl gariplik şu: iş yerinde stres olup ağlarsan, gelip profesyonelce gözyaşlarını silen 'yakışıklı ağlama terapistleri' kiralayabiliyorsun!",
+      "prompt": "Neresi bu fütüristik ve garip ülke?",
+      "answer": "Japonya",
+      "options": ["Çin", "Tayvan", "Güney Kore", "Japonya"],
+      "silh": "<svg viewBox=\"0 0 90 200\" xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"62\"><path d=\"M 52,8 C 68,12 78,28 78,50 C 78,72 68,95 55,118 C 44,138 32,155 22,168 C 16,176 12,180 12,175 C 12,168 20,155 30,138 C 42,118 50,95 52,68 C 54,42 46,18 52,8 Z\"/></svg>",
+      "facts": [["Başkent", "Tokyo"], ["Hizmet", "Ağlama Terapisti"]],
+      "pts": 2
+    },
+    {
+      "cat": "Savunma",
+      "title": "Defansif Oyunun Zirvesi",
+      "clue": "Sanki Hearts of Iron'da ülkenin her sınırına kale döşemişsin gibi bir yer. İkinci Dünya Savaşı sırasında işgal edilirse diye tüm köprüleri, tünelleri ve yolları patlayıcılarla donatmışlardı! Çikolatası ve tarafsızlığıyla meşhur ülke.",
+      "prompt": "Sence bu ülke neresi?",
+      "answer": "İsviçre",
+      "options": ["Avusturya", "Belçika", "Almanya", "İsviçre"],
+      "silh": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"37\"><path d=\"M 18,42 L 35,18 L 68,12 L 102,18 L 122,38 L 118,68 L 95,85 L 55,88 L 25,72 Z\"/></svg>",
+      "facts": [["Başkent", "Bern"], ["Özellik", "Tarafsızlık + Çikolata"]],
+      "pts": 3
+    },
+    {
+      "cat": "Gastronomi",
+      "title": "Löp Et ve Saf Protein",
+      "clue": "Dünyanın kişi başına en çok sığır eti tüketilen ülkelerinden biri. O kadar çok Asado (mangal) yapıyorlar ki havadan duman tütüyor gibi. Futbol ve tangosuyla da meşhur bu Güney Amerika ülkesi.",
+      "prompt": "Sence hangisi?",
+      "answer": "Arjantin",
+      "options": ["Brezilya", "Şili", "Uruguay", "Arjantin"],
+      "silh": "<svg viewBox=\"0 0 100 200\" xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"60\"><path d=\"M 35,5 L 68,8 L 82,32 L 80,65 L 72,98 L 62,128 L 50,155 L 35,175 L 22,168 L 18,142 L 22,115 L 28,88 L 25,58 L 30,28 Z\"/></svg>",
+      "facts": [["Başkent", "Buenos Aires"], ["Özellik", "Asado & Tango"]],
+      "pts": 2
+    },
+    {
+      "cat": "Sinema",
+      "title": "Porgların İstilası",
+      "clue": "Luke Skywalker'ın inzivaya çekildiği Ahch-To gezegeninin sahneleri bu ülkedeki Skellig Michael adasında çekildi. Adada o kadar çok gerçek martı vardı ki, yapımcılar üşenip onları CGI ile o tatlı Porg yaratıklarına dönüştürdü!",
+      "prompt": "Hangi yeşil ülke burası?",
+      "answer": "İrlanda",
+      "options": ["İskoçya", "Galler", "İngiltere", "İrlanda"],
+      "silh": "<svg viewBox=\"0 0 120 140\" xmlns=\"http://www.w3.org/2000/svg\" width=\"42\" height=\"49\"><path d=\"M 25,32 L 48,8 L 78,10 L 100,32 L 105,65 L 88,98 L 62,118 L 32,112 L 15,88 L 12,58 Z\"/></svg>",
+      "facts": [["Başkent", "Dublin"], ["Film", "Star Wars: Son Jedi"]],
+      "pts": 3
+    },
+    {
+      "cat": "Doğa",
+      "title": "Custom Assetlerle Dolu Açık Dünya",
+      "clue": "Bu ada ülkesinin hayvanlarının ve bitkilerinin %90'ı dünyanın başka hiçbir yerinde bulunmuyor! Sanki geliştirici ekip sadece buraya özel yepyeni tuhaf 3D assetler tasarlamış gibi. Bir animasyon filmiyle de aynı adı taşıyor.",
+      "prompt": "Neresi bu eşsiz ada?",
+      "answer": "Madagaskar",
+      "options": ["Madagaskar", "Sri Lanka", "Filipinler", "Endonezya"],
+      "silh": "<svg viewBox=\"0 0 80 200\" xmlns=\"http://www.w3.org/2000/svg\" width=\"26\" height=\"65\"><path d=\"M 35,5 L 58,10 L 68,35 L 72,68 L 65,102 L 55,135 L 42,162 L 28,172 L 15,158 L 12,125 L 18,90 L 22,58 L 25,28 Z\"/></svg>",
+      "facts": [["Başkent", "Antananarivo"], ["Endemik", "Türlerin %90'ı"]],
+      "pts": 3
+    },
+    {
+      "cat": "E-Spor",
+      "title": "Hile Yapana Gerçek Hapis!",
+      "clue": "Rekabetçi oyun kültürünün zirvesi burası; ayrı televizyon kanalları bile var. Asıl bomba şu: online oyunlarda aimbot veya wallhack kullanmak yasal suç! Hile yaparsan gerçek hayatta hapis cezası alabiliyorsun.",
+      "prompt": "Sence neresi bu oyuncu dostu (ama hileci düşmanı) ülke?",
+      "answer": "Güney Kore",
+      "options": ["Çin", "Japonya", "Tayvan", "Güney Kore"],
+      "silh": "<svg viewBox=\"0 0 120 100\" xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"42\"><path d=\"M 20,38 L 45,8 L 80,10 L 105,32 L 102,68 L 78,88 L 42,85 L 18,65 Z\"/></svg>",
+      "facts": [["Başkent", "Seul"], ["Hile", "= Hapis Cezası"]],
+      "pts": 3
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Kuş Dışkısından Gelen Zenginlik",
+      "clue": "Bu minik ada ülkesi, kuşların binlerce yıl tuvaletini yapmasıyla devasa bir fosfat yatağına dönüştü. Bunu satarak bir ara dünyanın kişi başına en zengin ülkesi oldular! Sonra parayı lüks arabalara harcayıp fosfat bitince tekrar fakirleştiler.",
+      "prompt": "Bu trajikomik ülke hangisi?",
+      "answer": "Nauru",
+      "options": ["Tuvalu", "Nauru", "Marshall Adaları", "Kiribati"],
+      "silh": "<svg viewBox=\"0 0 50 35\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"36\"><ellipse cx=\"25\" cy=\"17\" rx=\"22\" ry=\"13\"/></svg>",
+      "facts": [["Kıta", "Pasifik"], ["Alan", "21 km²"]],
+      "pts": 4
+    },
+    {
+      "cat": "Hukuk",
+      "title": "Devlet Suçüstü Yakalar",
+      "clue": "Bu ülkede sakız sokmak ve satmak yasalara aykırı! Sadece tıbbi reçeteli sakız alınabiliyor. Yere çöp atmak veya metroda yemek yemenin cezaları cüzdan deliyor. İnanılmaz modern ve kurallı bu Asya şehir devleti.",
+      "prompt": "Neresi bu?",
+      "answer": "Singapur",
+      "options": ["Hong Kong", "Tayvan", "Singapur", "Japonya"],
+      "silh": "<svg viewBox=\"0 0 80 55\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"36\"><path d=\"M 5,10 L 50,5 L 75,20 L 75,40 L 55,50 L 10,48 L 2,35 Z\"/></svg>",
+      "facts": [["Tür", "Şehir Devleti"], ["Ceza", "Sakız = Yasak"]],
+      "pts": 3
+    },
+    {
+      "cat": "Coğrafya",
+      "title": "Hileli Harita Sınırı",
+      "clue": "Her tarafından tek bir ülkenin içine hapsolmuş bir ülke. Yani dünyada tek bir komşusu var. Dahası dünyanın en yüksek 'en alçak noktasına' sahip; ülkenin en çukur yeri bile deniz seviyesinin binlerce metre üzerinde!",
+      "prompt": "Neresi bu sınırları garip ülke?",
+      "answer": "Lesotho",
+      "options": ["Svaziland", "Zimbabve", "Namibya", "Lesotho"],
+      "silh": "<svg viewBox=\"0 0 100 80\" xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"40\"><ellipse cx=\"50\" cy=\"40\" rx=\"42\" ry=\"30\"/></svg>",
+      "facts": [["Komşu", "Sadece Güney Afrika"], ["En Alçak Nokta", "1.400 m+"]],
+      "pts": 4
+    },
+    {
+      "cat": "Teknoloji",
+      "title": "Dijital Çağın Başkenti",
+      "clue": "İnternete erişimi 'temel insan hakkı' sayan ilk ülkelerden. Vatandaşlar oy verme, vergi, şirket kurma gibi işlemlerin %99'unu dijital olarak yapıyor. Hatta siber saldırılara karşı verilerini başka bir ülkede yedekliyorlar.",
+      "prompt": "Neresi bu vizyoner Baltık ülkesi?",
+      "answer": "Estonya",
+      "options": ["Letonya", "Litvanya", "Estonya", "Finlandiya"],
+      "silh": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"26\"><path d=\"M 12,28 L 48,8 L 108,10 L 148,22 L 152,55 L 115,72 L 55,75 L 18,62 Z\"/></svg>",
+      "facts": [["Başkent", "Tallinn"], ["Dijital", "%99 E-Devlet"]],
+      "pts": 4
+    },
+    {
+      "cat": "Coğrafya",
+      "title": "Uzaya En Yakın Dağ",
+      "clue": "Dünyanın şekli tam yuvarlak olmadığı için, bu ülkedeki Chimborazo Dağı'nın zirvesi Everest'ten bile daha 'uzaya yakın' bir noktadır. İsmini de zaten ekvatordan alan bu Güney Amerika ülkesi.",
+      "prompt": "Sence hangisi?",
+      "answer": "Ekvador",
+      "options": ["Peru", "Kolombiya", "Bolivya", "Ekvador"],
+      "silh": "<svg viewBox=\"0 0 120 100\" xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"42\"><path d=\"M 22,38 L 48,8 L 88,12 L 108,40 L 100,75 L 68,90 L 32,85 L 12,60 Z\"/></svg>",
+      "facts": [["Başkent", "Quito"], ["Dağ", "Chimborazo"]],
+      "pts": 3
+    }
+  ],
+  "troll": [
+    {
+      "cat": "🃏 Troll",
+      "title": "Coğrafya Sorusu",
+      "clue": "Türkiye, hangi Kuzey Kore'dedir? Dikkatli düşün...",
+      "prompt": "Cevabın nedir?",
+      "answer": "Güney Kore",
+      "options": ["Kuzey Kore", "Güney Kore", "Orta Kore", "Batı Kore"],
+      "silh": "<svg viewBox=\"0 0 80 160\" xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"56\"><path d=\"M 30,5 L 55,8 L 65,35 L 68,65 L 60,95 L 50,120 L 38,135 L 28,130 L 22,105 L 18,75 L 22,45 Z\"/></svg>",
+      "facts": [["Soru", "Kuzey mi, Güney mi?"], ["Cevap", "Güney 😈"]],
+      "pts": 2
+    },
+    {
+      "cat": "🃏 Troll",
+      "title": "Pizza Kulesi",
+      "clue": "Pizza Kulesi ile ünlü olan ilimiz, hangi ülkededir? Şıklara çok dikkat et!",
+      "prompt": "Hangi ülke?",
+      "answer": "Romanya",
+      "options": ["Türkiye", "İtalya", "Romanya", "Fransa"],
+      "silh": "<svg viewBox=\"0 0 160 110\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"36\"><path d=\"M 18,35 L 55,8 L 100,5 L 142,22 L 148,55 L 128,82 L 85,92 L 45,85 L 18,65 Z\"/></svg>",
+      "facts": [["Beklenen", "İtalya"], ["Gerçek", "Romanya 😂"]],
+      "pts": 2
+    },
+    {
+      "cat": "🃏 Troll",
+      "title": "Avustralya'nın Başkenti",
+      "clue": "Avustralya'nın başkenti hangisidir? Bu bir tuzak DEĞİL ama çoğu kişi yanlış biliyor!",
+      "prompt": "Başkent nerede?",
+      "answer": "Canberra",
+      "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      "silh": "<svg viewBox=\"0 0 200 160\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"42\"><path d=\"M 10,80 C 12,50 28,22 58,12 C 88,2 128,5 158,18 C 188,31 200,55 195,80 C 190,105 175,118 155,120 C 135,122 125,132 115,145 C 105,158 88,160 70,150 C 52,140 35,125 22,108 C 10,92 8,105 10,80 Z\"/></svg>",
+      "facts": [["Başkent", "Canberra"], ["Yanıltıcı", "Sydney daha büyük"]],
+      "pts": 1
+    },
+    {
+      "cat": "🃏 Troll",
+      "title": "Kaç Kıta Var?",
+      "clue": "Dünyada kaç kıta vardır? Türkiye'de okulda 6 öğretilir, ama pek çok ülkede 7 ya da 5 olarak öğretilir. Biz 6 dersek Avrupa ile Asya ayrı mı, beraber mi?",
+      "prompt": "Uluslararası standart kaç?",
+      "answer": "7",
+      "options": ["5", "6", "7", "8"],
+      "silh": "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"35\"><ellipse cx=\"60\" cy=\"40\" rx=\"55\" ry=\"32\"/><line x1=\"60\" y1=\"8\" x2=\"60\" y2=\"72\" stroke=\"#040408\" stroke-width=\"3\"/></svg>",
+      "facts": [["Türkiye'de", "6 kıta"], ["Uluslararası", "7 kıta"]],
+      "pts": 2
+    },
+    {
+      "cat": "🃏 Troll",
+      "title": "En Küçük Ülke",
+      "clue": "Dünyanın en küçük ülkesi hangisidir? Monaco değil, San Marino da değil! Bu ülkenin yüzölçümü sadece 0,44 km² ve tamamen bir şehrin içinde sıkışmış durumda.",
+      "prompt": "Hangi cücük ülke?",
+      "answer": "Vatikan",
+      "options": ["Monaco", "San Marino", "Liechtenstein", "Vatikan"],
+      "silh": "<svg viewBox=\"0 0 30 30\" xmlns=\"http://www.w3.org/2000/svg\" width=\"36\" height=\"36\"><rect x=\"5\" y=\"5\" width=\"20\" height=\"20\" rx=\"3\"/></svg>",
+      "facts": [["Alan", "0.44 km²"], ["Nüfus", "~800 Kişi"]],
+      "pts": 1
+    }
+  ]
+}
