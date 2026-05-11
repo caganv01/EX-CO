@@ -1,3 +1,11 @@
+/* ═══ MOBİL: MAVI FOCUS RING ENGELLEYİCİ ═══ */
+/* Android Chrome bazı durumlarda CSS'e rağmen mavi focus ring gösteriyor.
+   touchstart anında blur() çağrısı ile focus'u hemen bıraktırıyoruz. */
+document.addEventListener('touchstart', function(e) {
+  const t = e.target.closest('button, .hand-card, .qopt, .smc-btn, .end-btn, .q-next');
+  if (t) { t.blur(); }
+}, { passive: true, capture: true });
+
 /* ═══ CORNERS ═══ */
 const tpl = document.getElementById('corner-tpl');
 document.querySelectorAll('.corn').forEach(e => e.appendChild(tpl.content.cloneNode(true)));

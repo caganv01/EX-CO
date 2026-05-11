@@ -1,11 +1,20 @@
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent!important;-webkit-touch-callout:none;}
-button{-webkit-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent!important;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0)!important;-webkit-touch-callout:none;}
+button,a,[role="button"]{
+  -webkit-appearance:none;appearance:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0)!important;
+  touch-action:manipulation;
+}
 button:focus,button:focus-visible,button:active,
 .qopt:focus,.qopt:focus-visible,.qopt:active,
 .smc-btn:focus,.smc-btn:focus-visible,.smc-btn:active,
 .end-btn:focus,.end-btn:focus-visible,.end-btn:active,
 .q-next:focus,.q-next:focus-visible,.q-next:active,
-.hand-card:focus,.hand-card:focus-visible,.hand-card:active{outline:none!important;box-shadow:none!important;-webkit-tap-highlight-color:transparent!important;}
+.hand-card:focus,.hand-card:focus-visible,.hand-card:active{
+  outline:none!important;
+  box-shadow:none!important;
+  background-color:unset;
+  -webkit-tap-highlight-color:rgba(0,0,0,0)!important;
+}
 :root{
   --gold:#c9a84c;
   --gold2:rgba(201,168,76,0.4);
@@ -264,19 +273,32 @@ body::before{
     min-height:100svh;
     min-height:100dvh;
     overflow-x:hidden;overflow-y:auto;
-    /* keep flex centering active */
     display:flex;flex-direction:column;align-items:center;justify-content:center;
   }
-  .lobby{padding:24px 0;width:100%;}
-  .scene{transform:scale(.5);margin-bottom:-210px;}
+  /* Lobby: tam dikey + yatay ortalama */
+  .lobby{
+    width:100%;
+    padding:20px 0 16px;
+    display:flex;flex-direction:column;align-items:center;
+  }
+  /* scene 720px wide — telefona (375px) sığdırmak için:
+     margin-left: 50vw - 360px  →  sol kenarı ekranın yarısından 360px geriye al
+     transform-origin:center center  →  scale, ortadan ölçeklensin */
+  .scene{
+    transform:scale(.46);
+    transform-origin:center center;
+    margin-left:calc(50vw - 360px);
+    margin-top:-80px;
+    margin-bottom:-180px;
+  }
   .l-brand{font-size:20px;letter-spacing:8px;}
-  .l-tag{font-size:6.5px;letter-spacing:4px;margin-bottom:12px;}
+  .l-tag{font-size:6.5px;letter-spacing:4px;margin-bottom:10px;}
   .l-hint{font-size:6.5px;letter-spacing:2.5px;}
   .qopts{grid-template-columns:1fr;gap:8px;}
   .qpanel{padding:18px 18px 16px;}
   .q-title{font-size:16px;line-height:1.3;}
   .q-clue{font-size:12.5px;line-height:1.65;}
-  .qopt{padding:11px 12px;gap:10px;}
+  .qopt{padding:11px 12px;gap:10px;touch-action:manipulation;}
   .qopt-text{font-size:12.5px;}
   .smc{width:calc(100vw - 40px);max-width:310px;padding:28px 24px 24px;}
   .endcard{width:calc(100vw - 40px);max-width:300px;padding:30px 24px 26px;}
@@ -285,24 +307,26 @@ body::before{
   .q-reveal-silh{width:44px;height:44px;}
   .q-reveal-name{font-size:13px;}
   .q-reveal-fact{font-size:10.5px;}
-  /* Quiz: fixed+overflow-y combo fix for mobile centering */
+  /* Quiz ekranı: fixed + scroll */
   .quiz{
     position:fixed;inset:0;
     display:flex;flex-direction:column;
     align-items:center;justify-content:flex-start;
     overflow-y:auto;overflow-x:hidden;
-    padding:max(env(safe-area-inset-top,14px),14px) 10px max(env(safe-area-inset-bottom,24px),24px);
+    padding:14px 10px 24px;
     gap:10px;
   }
-  .quiz::before{
-    content:'';
-    flex:1;min-height:0;
-    display:block;
-  }
+  .quiz::before{content:'';flex:1;min-height:0;display:block;}
   .quiz > *{flex-shrink:0;}
 }
 
 @media (max-width: 360px){
-  .scene{transform:scale(.42);margin-bottom:-244px;}
+  .scene{
+    transform:scale(.38);
+    transform-origin:center center;
+    margin-left:calc(50vw - 360px);
+    margin-top:-94px;
+    margin-bottom:-196px;
+  }
   .l-brand{font-size:18px;letter-spacing:6px;}
 }
