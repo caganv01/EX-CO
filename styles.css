@@ -1,4 +1,6 @@
-*{margin:0;padding:0;box-sizing:border-box;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;}
+button,:focus{outline:none;}
+button:active,.qopt:active,.smc-btn:active,.end-btn:active,.q-next:active{outline:none;}
 :root{
   --gold:#c9a84c;
   --gold2:rgba(201,168,76,0.4);
@@ -271,7 +273,21 @@ body::before{
   .q-reveal-silh{width:44px;height:44px;}
   .q-reveal-name{font-size:13px;}
   .q-reveal-fact{font-size:10.5px;}
-  .quiz{padding:14px 10px 24px;gap:10px;}
+  /* Quiz: fixed+overflow-y combo fix for mobile centering */
+  .quiz{
+    position:fixed;inset:0;
+    display:flex;flex-direction:column;
+    align-items:center;justify-content:flex-start;
+    overflow-y:auto;overflow-x:hidden;
+    padding:max(env(safe-area-inset-top,14px),14px) 10px max(env(safe-area-inset-bottom,24px),24px);
+    gap:10px;
+  }
+  .quiz::before{
+    content:'';
+    flex:1;min-height:0;
+    display:block;
+  }
+  .quiz > *{flex-shrink:0;}
 }
 
 @media (max-width: 360px){
