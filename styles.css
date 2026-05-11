@@ -280,13 +280,14 @@ body::before{
     align-items:center;justify-content:center;
     overflow:hidden;
   }
-  /* scene 720px — fixed lobby icinde flex ortalar, overflow ile kesilir */
+  /* scene: layout yüksekliği = görsel yükseklik = 420*0.46=193px
+     Her iki taraftan eşit: (420-193)/2 = 113px */
   .scene{
     transform:scale(.46);
     transform-origin:center center;
     flex-shrink:0;
-    margin-top:-60px;
-    margin-bottom:-160px;
+    margin-top:-113px;
+    margin-bottom:-113px;
   }
   .l-brand{font-size:20px;letter-spacing:8px;}
   .l-tag{font-size:6.5px;letter-spacing:4px;margin-bottom:10px;}
@@ -318,12 +319,13 @@ body::before{
 }
 
 @media (max-width: 360px){
+  /* scale 0.38: görsel yükseklik=420*0.38=160px → (420-160)/2=130px */
   .scene{
     transform:scale(.38);
     transform-origin:center center;
-    margin-left:calc(50vw - 360px);
-    margin-top:-94px;
-    margin-bottom:-196px;
+    margin-left:0;
+    margin-top:-130px;
+    margin-bottom:-130px;
   }
   .l-brand{font-size:18px;letter-spacing:6px;}
 }
