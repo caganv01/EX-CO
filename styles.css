@@ -1,6 +1,11 @@
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;}
-button,:focus{outline:none;}
-button:active,.qopt:active,.smc-btn:active,.end-btn:active,.q-next:active{outline:none;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent!important;-webkit-touch-callout:none;}
+button{-webkit-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent!important;}
+button:focus,button:focus-visible,button:active,
+.qopt:focus,.qopt:focus-visible,.qopt:active,
+.smc-btn:focus,.smc-btn:focus-visible,.smc-btn:active,
+.end-btn:focus,.end-btn:focus-visible,.end-btn:active,
+.q-next:focus,.q-next:focus-visible,.q-next:active,
+.hand-card:focus,.hand-card:focus-visible,.hand-card:active{outline:none!important;box-shadow:none!important;-webkit-tap-highlight-color:transparent!important;}
 :root{
   --gold:#c9a84c;
   --gold2:rgba(201,168,76,0.4);
@@ -254,8 +259,15 @@ body::before{
 
 /* ─── RESPONSIVE (phone) ─── */
 @media (max-width: 500px){
-  body{height:auto;min-height:100vh;overflow-x:hidden;overflow-y:auto;}
-  .lobby{padding:20px 0;}
+  body{
+    height:auto;
+    min-height:100svh;
+    min-height:100dvh;
+    overflow-x:hidden;overflow-y:auto;
+    /* keep flex centering active */
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+  }
+  .lobby{padding:24px 0;width:100%;}
   .scene{transform:scale(.5);margin-bottom:-210px;}
   .l-brand{font-size:20px;letter-spacing:8px;}
   .l-tag{font-size:6.5px;letter-spacing:4px;margin-bottom:12px;}
